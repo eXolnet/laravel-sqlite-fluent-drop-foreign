@@ -21,15 +21,11 @@ If you don't use package auto-discovery, add the service provider to the ``provi
 Exolnet\SQLiteFluentDropForeign\SQLiteFluentDropForeignServiceProvider::class
 ```
 
-And the facade to the ``facades`` array in `config/app.php`: 
-
-```
-'SQLiteFluentDropForeign' => Exolnet\SQLiteFluentDropForeign\SQLiteFluentDropForeignFacade::class
-```
-
 ## Usage
 
-Explain how to use your package.
+After the package is installed, all the call to `dropForeign` on a `sqlite` connection will return a `new Fluent()` in 
+order to avoid getting the `SQLite doesn't support dropping foreign keys (you would need to re-create the table).` 
+error.
 
 ## Testing
 
