@@ -33,6 +33,18 @@ class SQLiteFluentDropForeignServiceProvider extends ServiceProvider
                             {
                                 public function dropForeign($index)
                                 {
+                                    if (!is_array($index)) {
+                                        $foreign = ' ' . $index;
+                                    } else {
+                                        $foreign = ' on ' . $index[0];
+                                    }
+
+                                    fwrite(
+                                        STDERR,
+                                        "You are using drop foreign" . $foreign .
+                                        " in your migration which is not supported in sqlite.\n"
+                                    );
+
                                     return new Fluent();
                                 }
                             };
