@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/eXolnet/laravel-sqlite-fluent-drop-foreign/v/stable?format=flat-square)](https://packagist.org/packages/eXolnet/laravel-sqlite-fluent-drop-foreign)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/eXolnet/laravel-sqlite-fluent-drop-foreign/master.svg?style=flat-square)](https://travis-ci.org/eXolnet/laravel-sqlite-fluent-drop-foreign)
+[![Build Status](https://img.shields.io/github/workflow/status/eXolnet/laravel-sqlite-fluent-drop-foreign/tests?label=tests&style=flat-square)](https://github.com/eXolnet/laravel-sqlite-fluent-drop-foreign/actions?query=workflow%3Atests)
 [![Total Downloads](https://img.shields.io/packagist/dt/eXolnet/laravel-sqlite-fluent-drop-foreign.svg?style=flat-square)](https://packagist.org/packages/eXolnet/laravel-sqlite-fluent-drop-foreign)
 
 Make dropForeign fluent when using an SQLite database.
