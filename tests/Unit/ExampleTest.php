@@ -2,7 +2,7 @@
 
 namespace Exolnet\SQLiteFluentDropForeign\Tests\Unit;
 
-class ExampleTest extends UnitTest
+class ExampleTest extends UnitTestCase
 {
     public function testBasic()
     {
